@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.user-pic {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.apps-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+.profile {
+  margin: 8px 8px;
+  padding: 4px;
+}
+.profile li {
+  margin: 0 8px;
+}
+.profile ul {
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.personal-links {
+  margin-right: 8px;
+}
+.personal-links, .personal {
+  display: flex;
+  align-items: center;
+}
+.personal-links a:hover {
+  text-decoration: underline;
+}
+.apps-icon:hover, .user-pic:hover {
+  background-color: #eaeaea;
+  box-shadow: 0px 0px 0px 4px #eaeaea;
+  border-radius: 50%;
+}
+.main {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+}
+.main img {
+  padding: 20px;
+}
+.search input {
+  border: none;
+  width: 90%;
+  font-size: 1.6rem;
+  margin: 0 8px;
+}
+.search input:focus {
+  outline: none;
+}
+.search {
+  width: 35vw;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid  #dfe1e5;
+  border-radius: 24px;
+}
+.search:hover {
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+}
+.search-icon, .voice-search {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.buttons {
+  margin: 24px;
+  padding: 4px;
+  text-align: center;
+}
+.buttons a {
+  background-color: #f8f9fa;
+  margin: 0 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  border: 1px solid #f8f9fa;
+}
+.buttons a:hover {
+  border: 1px solid lightgrey;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e7e7e7;
+  font-size: 1.2rem;
+}
+.footer a {
+  color: #70757a;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer ul li {
+  margin: 0 20px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .search {
+    width: 80vw;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .buttons a {
+    margin: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  .search {
+    width: 60vw;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
